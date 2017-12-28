@@ -141,40 +141,36 @@ brew tap caskroom/cask
 brew tap caskroom/versions
 
 # Core casks
-#brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" java
-brew cask install --appdir="~/Applications" xquartz
+#brew cask install --appdir="/Applications" spotify
+#brew cask install --appdir="~/Applications" iterm2-beta
+#brew cask install --appdir="~/Applications" java8
+#brew cask install --appdir="~/Applications" xquartz-beta
 
 # Development tool casks
-#brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" atom-beta
-#brew cask install --appdir="/Applications" virtualbox
-#brew cask install --appdir="/Applications" vagrant
-#brew cask install --appdir="/Applications" macdown
+#brew cask install --appdir="/Applications" chrome-remote-desktop-host
+#brew cask install --appdir="/Applications" atom-beta
+#brew cask install --appdir="/Applications" java
+#brew cask install --appdir="/Applications" vuze
+#brew cask install --appdir="/Applications" vlc
 
 # Misc casks
-brew cask install --appdir="/Applications" google-chrome-dev
-#brew cask install --appdir="/Applications" firefox
-#brew cask install --appdir="/Applications" skype
-#brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" dropbox
-#brew cask install --appdir="/Applications" evernote
-#brew cask install --appdir="/Applications" 1password
-#brew cask install --appdir="/Applications" gimp
-#brew cask install --appdir="/Applications" inkscape
+#brew cask install --appdir="/Applications" google-chrome-dev
+#brew cask install --appdir="/Applications" google-backup-and-sync
+#brew cask install --appdir="/Applications" gcc-arm-embedded
+#brew cask install --appdir="/Applications" slack-beta
+#brew cask install --appdir="/Applications" dropbox-beta
+#brew cask install --appdir="/Applications" flash-player-debugger-ppapi
+#brew cask install --appdir="/Applications" flash-player-debugger-npapi
+#brew cask install --appdir="/Applications" google-cloud-sdk 
+#brew cask install --appdir="/Applications" osxfuse
 
 #Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
-
-# Install Docker, which requires virtualbox
-#brew install docker
-#brew install boot2docker
+#brew cask install --appdir="/Applications" docker-edge
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv  qlimagesize webpquicklook
 
 # Append Brewfile and update
-brew-file update
+
 # Remove outdated versions from the cellar.
 brew cleanup

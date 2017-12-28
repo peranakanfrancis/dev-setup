@@ -46,7 +46,7 @@ echo "------------------------------"
 echo "Setting up py2-data virtual environment."
 
 # Create a Python2 data environment
-mkvirtualenv py2-data
+mkvirtualenv --python=/usr/local/bin/python2 py2-data
 workon py2-data
 
 # Install Python data modules
@@ -90,7 +90,7 @@ pip install "ipython[all]"
 pip install bokeh
 pip install Flask
 pip install sqlalchemy
-#pip install mysql-python  # Python 2 only, use mysqlclient instead
+#pip install mysqlclient  # Python 2 only, use mysqlclient instead
 pip install mysqlclient
 
 ###############################################################################
