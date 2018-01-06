@@ -19,14 +19,14 @@ fi
 brew update
 
 # Install Cask
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 brew tap caskroom/versions
 
 brew cask install --appdir="~/Applications" java
-brew cask install --appdir="~/Applications" Caskroom/versions/intellij-idea-ce
+brew cask install --appdir="~/Applications" intellij-idea-ce
 brew cask install --appdir="~/Applications" android-studio
 
-brew install android-sdk
+brew cask  install caskroom/cask/android-sdk
 
 # Remove outdated versions from the cellar.
 brew cleanup
