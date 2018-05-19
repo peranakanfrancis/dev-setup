@@ -23,6 +23,5 @@ brew install node
 # Remove outdated versions from the cellar.
 brew cleanup
 
-yarn global add bower bower-away coffee-script-redux css-select forestry gatsby-cli generator-gulp generator-webpack-babel http-rewrite-proxy jsontool karma-coffee-preprocessor netlify-cli serverless surge generator-grunt yo less coffeescript stylelint gulp-sass dispatch-proxy
 
-#gem install jekyll
+gem install jekyll

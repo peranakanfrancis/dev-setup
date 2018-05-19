@@ -67,7 +67,8 @@ brew install vim --HEAD --with-cscope --with-lua --with-override-system-vim --wi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php71 --with-gmp
+brew install --build-from-source --with-httpd --with-webp --with-homebrew-libressl --with-homebrew-libxml2 --with-homebrew-libxslt --with-cgi  php70 php72 
+brew install --build-from-source php70-xdebug php70-gmp php70-mrcypt php70-yaml php70-apcu php70-opcache 
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -117,7 +118,7 @@ brew install p7zip
 brew install pigz
 brew install pv
 brew install rename
-brew install rhino
+brew install redis
 brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree
@@ -139,38 +140,39 @@ heroku update
 # Install Cask
 brew tap caskroom/cask
 brew tap caskroom/versions
-
+brew tap homebrew/science
 # Core casks
-#brew cask install --appdir="/Applications" spotify
-#brew cask install --appdir="~/Applications" iterm2-beta
-#brew cask install --appdir="~/Applications" java8
-#brew cask install --appdir="~/Applications" xquartz-beta
+brew cask install --appdir="/Applications" spotify
+brew cask install --appdir="~/Applications" iterm2-beta
+brew cask install --appdir="~/Applications" musixmatch
+brew cask install --appdir="~/Applications" xquartz-beta
 
 # Development tool casks
-#brew cask install --appdir="/Applications" chrome-remote-desktop-host
-#brew cask install --appdir="/Applications" atom-beta
-#brew cask install --appdir="/Applications" java
-#brew cask install --appdir="/Applications" vuze
-#brew cask install --appdir="/Applications" vlc
+brew cask install --appdir="/Applications" chrome-remote-desktop-host
+brew cask install --appdir="/Applications" sequal-pro
+brew cask install --appdir="/Applications" java 
+brew cask install --appdir="/Applications" vuze
+brew cask install --appdir="/Applications" vlc
 
 # Misc casks
-#brew cask install --appdir="/Applications" google-chrome-dev
-#brew cask install --appdir="/Applications" google-backup-and-sync
-#brew cask install --appdir="/Applications" gcc-arm-embedded
-#brew cask install --appdir="/Applications" slack-beta
-#brew cask install --appdir="/Applications" dropbox-beta
-#brew cask install --appdir="/Applications" flash-player-debugger-ppapi
-#brew cask install --appdir="/Applications" flash-player-debugger-npapi
-#brew cask install --appdir="/Applications" google-cloud-sdk 
-#brew cask install --appdir="/Applications" osxfuse
+brew cask install --appdir="/Applications" google-chrome-dev
+brew cask install --appdir="/Applications" google-backup-and-sync
+brew cask install --appdir="/Applications" visual-studio-code
+brew cask install --appdir="/Applications" slack-beta
+brew cask install --appdir="/Applications" dropbox-beta
+brew cask install --appdir="/Applications" flash-player-debugger-ppapi
+brew cask install --appdir="/Applications" flash-player-debugger-npapi
+brew cask install --appdir="/Applications" google-cloud-sdk 
+brew cask install --appdir="/Applications" osxfuse
 
 #Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" docker-edge
+brew cask install --appdir="/Applications" docker-edge
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv  qlimagesize webpquicklook
 
 # Append Brewfile and update
+brew-file update --format bundler --no-appstore --no-upgrade
 
 # Remove outdated versions from the cellar.
 brew cleanup
