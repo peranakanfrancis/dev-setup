@@ -30,7 +30,7 @@ workon py2-data
 
 pip install boto
 pip install awscli
-pip install mrjob
+# pip install mrjob
 pip install s3cmd
 
 EXTRA_PATH=~/.extra
@@ -54,10 +54,9 @@ echo "Updating py3-data virtual environment with AWS modules."
 mkvirtualenv --python=/usr/local/bin/python3 py3-data
 workon py3-data
 
-pip install boto
+pip install --ignore-installed six boto3
 pip install awscli
-#pip install mrjob  # Python 2 only
-#pip install s3cmd  # Python 2 only
+pip install s3cmd  # Python 2 only
 
 # Uncomment if you want to hook up the aws cli autocomplete for Python 3
 EXTRA_PATH=~/.extra
@@ -108,6 +107,6 @@ brew update
 
 #echo "------------------------------"
 echo "TODO: Update .aws/ with your AWS credentials and region, or run aws --configure."
-echo "TODO: Update .mrjob.conf with your credentials, keypair, keypair location, region, and bucket info."
+# echo "TODO: Update .mrjob.conf with your credentials, keypair, keypair location, region, and bucket info."
 echo "TODO: Update .s3cfg with your credentials, location, and passphrase or run s3cmd --configure."
 echo "Script completed."

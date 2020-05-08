@@ -50,19 +50,19 @@ mkvirtualenv --python=/usr/local/bin/python2 py2-data
 workon py2-data
 
 # Install Python data modules
-pip install numpy
-pip install scipy
-pip install matplotlib
-pip install pandas
-pip install sympy
-pip install nose
+# pip install numpy
+# pip install scipy
+# pip install matplotlib
+# pip install pandas
+# pip install sympy
+# pip install nose
 pip install unittest2
-pip install seaborn
-pip install scikit-learn
-pip install "ipython[all]"
-pip install bokeh
+# pip install seaborn
+# pip install scikit-learn
+# pip install "ipython[all]"
+# pip install bokeh
 pip install Flask
-pip install sqlalchemy
+# pip install sqlalchemy
 pip install mysql-python
 
 ###############################################################################
@@ -77,32 +77,31 @@ mkvirtualenv --python=/usr/local/bin/python3 py3-data
 workon py3-data
 
 # Install Python data modules
-pip install numpy
-pip install scipy
-pip install matplotlib
-pip install pandas
-pip install sympy
-pip install nose
+# pip install numpy
+# pip install scipy
+# pip install matplotlib
+# pip install pandas
+# pip install sympy
+# pip install nose
 pip install unittest2
-pip install seaborn
-pip install scikit-learn
-pip install "ipython[all]"
+# pip install seaborn
+# pip install scikit-learn
+# pip install "ipython[all]"
 pip install bokeh
 pip install Flask
 pip install sqlalchemy
-#pip install mysqlclient  # Python 2 only, use mysqlclient instead
 pip install mysqlclient
 
 ###############################################################################
 # Install IPython Profile
 ###############################################################################
 
-echo "------------------------------"
-echo "Installing IPython Notebook Default Profile"
+# echo "------------------------------"
+# echo "Installing IPython Notebook Default Profile"
 
 # Add the IPython profile
-mkdir -p ~/.ipython
-cp -r init/profile_default/ ~/.ipython/profile_default
+# mkdir -p ~/.ipython
+# cp -r init/profile_default/ ~/.ipython/profile_default
 
 echo "------------------------------"
 echo "Script completed."

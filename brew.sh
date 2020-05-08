@@ -67,9 +67,7 @@ brew install vim --HEAD --with-cscope --with-lua --with-override-system-vim --wi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install --build-from-source --with-httpd --with-webp --with-homebrew-libressl --with-homebrew-libxml2 --with-homebrew-libxslt --with-cgi  php70 php72 
-brew install --build-from-source php70-xdebug php70-gmp php70-mrcypt php70-yaml php70-apcu php70-opcache 
-
+brew install php@7.2
 # Install font tools.
 brew tap bramstein/webfonttools
 brew install sfnt2woff
@@ -111,7 +109,7 @@ brew install git-lfs
 brew install git-flow
 brew install git-extras
 brew install hub
-brew install imagemagick --with-webp
+brew install imagemagick@6 --with-webp
 brew install lua
 brew install lynx
 brew install p7zip
@@ -119,8 +117,6 @@ brew install pigz
 brew install pv
 brew install rename
 brew install redis
-brew install speedtest_cli
-brew install ssh-copy-id
 brew install tree
 brew install webkit2png
 brew install zopfli
@@ -139,8 +135,6 @@ heroku update
 
 # Install Cask
 brew tap caskroom/cask
-brew tap caskroom/versions
-brew tap homebrew/science
 # Core casks
 brew cask install --appdir="/Applications" spotify
 brew cask install --appdir="~/Applications" iterm2-beta
@@ -155,7 +149,7 @@ brew cask install --appdir="/Applications" vuze
 brew cask install --appdir="/Applications" vlc
 
 # Misc casks
-brew cask install --appdir="/Applications" google-chrome-dev
+brew cask install --appdir="/Applications" google-chrome-canary
 brew cask install --appdir="/Applications" google-backup-and-sync
 brew cask install --appdir="/Applications" visual-studio-code
 brew cask install --appdir="/Applications" slack-beta
